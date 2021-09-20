@@ -51,3 +51,6 @@ header p {
   font-size: 18px;
   font-weight: bold;
 }
+.decoration {
+  list-style: none;
+}
