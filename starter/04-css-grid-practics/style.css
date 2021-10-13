@@ -7,12 +7,12 @@
 
 /* PAGE SECTIONS */
 body {
+  border-top: 10px solid #1098ad;
   color: #444;
   font-family: sans-serif;
 }
 
 .container {
-  border-top: 10px solid #1098ad;
   position: relative;
   width: 1200px;
   /* margin-left: auto;
@@ -26,7 +26,7 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
@@ -36,7 +36,7 @@ nav {
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .post-header {
@@ -338,15 +338,15 @@ footer {
   font-weight: normal;
   font-style: italic;
 }
-.row {
+/* .row {
   display: flex;
   gap: 75px;
   margin-bottom: 60px;
   align-items: flex-start;
-}
-article {
-  /* dejar que flex automaticamente ajuste el width */
-  /* flex: 0 0 825px; */
+} */
+/* article {
+  /* dejar que flex automaticamente ajuste el width 
+ flex: 0 0 825px; 
   flex: 1;
   margin-bottom: 0;
 }
@@ -355,9 +355,39 @@ aside {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto
-  */
+  
   flex: 0 0 300px;
+} */
+
+/* CSS GRID LAYOUT */
+
+/* .row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 44px;
+  align-items: flex-start;
+}
+aside {
+  /* gap: 20px 0; 
+
+}
+/* footer {
+  text-align: center;
+} */
+/* Grid as the structor */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 40px;
+}
+.main-header {
+  grid-column: 1 / -1;
+}
+aside {
+  align-self: flex-start;
 }
 footer {
+  grid-column: 1 /-1;
   text-align: center;
+  background-image: cover;
 }
